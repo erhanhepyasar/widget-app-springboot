@@ -17,6 +17,7 @@ Project Features:
 * Maven
 * Rest API
 * Pagination
+* Unit Tests
 * Swagger UI
 * Logger
 * Lombok

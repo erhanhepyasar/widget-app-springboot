@@ -86,29 +86,14 @@ public class WidgetRepo {
                 .collect(Collectors.toList());
     }
 
-/*
-    Updates widget
- */
-
-    public static void updateWidget(Widget widget) {
-        final String id = widget.getId();
-        Widget widgetCurr;
-        for (int i = 0; i < widgets.size(); i++) {
-            widgetCurr = widgets.get(i);
-            if (widgetCurr.getId().equals(id)) {
-                widgets.remove(i);
-                break;
-            }
-        }
-    }
 
     /**
      * returns a view (not a new list) of the sourceList for the
      * range based on pageNo and pageSize
-     * @param sourceList
+     * @param sourceList source list
      * @param pageNo, page number should start from 0
-     * @param pageSize
-     * @return
+     * @param pageSize page size
+     * @return paginated list
      */
     public static <T> List<T> getPage(List<T> sourceList, int pageNo, int pageSize) {
         if(pageSize <= 0 || pageNo < 0) {
