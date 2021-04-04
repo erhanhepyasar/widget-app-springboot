@@ -5,7 +5,8 @@ Swagger-UI:
 http://localhost:8080/swagger-ui.html
 
 
-Pagination Examples (Default pageSize: 10 (max: 500), pageNo: 0):
+Pagination Examples:
+Default pageSize: 10 (max: 500), pageNo: 0
  
 http://localhost:8080/widgets?pageSize=5&pageNo=1
  
